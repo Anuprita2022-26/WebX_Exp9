@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AJAX Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🌟 Registration Form</h2>
+    <form id="registerForm" class="form-box">
+      <label>Name <input type="text" id="name" required /></label>
+      <label>College <input type="text" id="college" list="collegeList" required /></label>
+      <datalist id="collegeList">
+        <option value="VESIT" />
+        <option value="VJTI" />
+        <option value="SPIT" />
+        <option value="DJ Sanghvi" />
+      </datalist>
+      <label>Username <input type="text" id="username" required /></label>
+      <label>Password <input type="password" id="password" required /></label>
+      <label>Retype Password <input type="password" id="confirmPassword" required /></label>
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="message" class="message-box"></div>
+    <button id="addNewBtn" class="add-new-btn" style="display: none;">Add New</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
